@@ -1,0 +1,26 @@
+light house
+
+#include <iostream>
+using namespace std;
+class time
+{
+  public:
+  int h;
+  int m;
+  int s;
+  void operator >>()
+  {
+    cin>>h>>m>>s;
+  }
+  void operator <<()
+  {
+   cout<<h<<" Hours "<<m<<" Mins "<<s<<" secs";
+  }
+};
+int main() 
+{
+  time t;
+  t.operator >>();
+  t.operator <<();
+	return 0;
+}
